@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 * {
@@ -15,4 +16,9 @@ body {
 	display: grid;
 	place-items: center;
 	min-height: 100vh;
+}
+
+.app {
+	display: grid;
+	place-items: center;
 }

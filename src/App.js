@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.scss'
+import './index.scss'
 
 import Form from './Components/Form/Form'
 const App = () => {

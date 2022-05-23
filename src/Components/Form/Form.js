@@ -61,12 +61,13 @@ const Form = () => {
 			required: true,
 		},
 	]
+
+	const handleChange = (e) => {
+		setValues({ ...values, [e.target.name]: e.target.value })
+	}
+
 	const handleSubmit = (e) => {
 		e.preventDefault()
-
-	}
-	const onChange = (e) => {
-		setValues({ ...values, [e.target.name]: e.target.value })
 	}
 	return (
 		<>
@@ -77,7 +78,7 @@ const Form = () => {
 						key={input.id}
 						{...input}
 						value={values[input.name]}
-						onChange={onChange}
+						handleChange={handleChange}
 					/>
 				))}
 				<button className='btn'>Submit</button>

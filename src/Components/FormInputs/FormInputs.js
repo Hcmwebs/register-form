@@ -3,7 +3,7 @@ import './index.scss'
 
 const FormInputs = (props) => {
 	const [focused, setFocused] = useState(false)
-	const { label, errorMessage, onChange, id, ...inputProps } = props
+	const { label, errorMessage, handleChange, id, ...inputProps } = props
 
 	const handleFocus = (e) => {
 		setFocused(true)
@@ -13,7 +13,7 @@ const FormInputs = (props) => {
 			<label>{label}</label>
 			<input
 				{...inputProps}
-				onChange={onChange}
+				onChange={handleChange}
 				onBlur={handleFocus}
 				onFocus={() =>
 					inputProps.name === 'confirmPassword' && setFocused(true)
