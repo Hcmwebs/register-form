@@ -21,6 +21,7 @@ const Form = () => {
 	return (
 		<>
 			<form className='form' onSubmit={handleSubmit}>
+				<h1>Register</h1>
 				{inputs.map((input) => (
 					<FormInputs
 						key={input.id}

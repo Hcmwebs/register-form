@@ -1,11 +1,9 @@
-
-
- const inputs = [
+const inputs = [
 	{
 		id: 1,
 		name: 'username',
 		type: 'text',
-		placeHolder: 'Username',
+		placeholder: 'Username',
 		errorMessage:
 			'Username should be 3-16 characters and should not include any special characters!',
 		label: 'Username',
@@ -16,7 +14,7 @@
 		id: 2,
 		name: 'email',
 		type: 'email',
-		placeHolder: 'Email',
+		placeholder: 'Email',
 		errorMessage: 'It should be a valid email address!',
 		label: 'Email',
 		required: true,
@@ -25,14 +23,14 @@
 		id: 3,
 		name: 'birthday',
 		type: 'date',
-		placeHolder: 'Birthday',
+		placeholder: 'Birthday',
 		label: 'Birthday',
 	},
 	{
 		id: 4,
 		name: 'password',
 		type: 'password',
-		placeHolder: 'Password',
+		placeholder: 'Password',
 		errorMessage:
 			'Password should be 8-20 characters and include at least 1 letter, 1 number and 1 special character!',
 		label: 'Password',
@@ -43,10 +41,10 @@
 		id: 5,
 		name: 'confirmPassword',
 		type: 'password',
-		placeHolder: 'Confirm Password',
+		placeholder: 'Confirm Password',
 		errorMessage: 'Password do not match!',
 		label: 'Confirm Password',
-    pattern: '',
+		pattern: '',
 		required: true,
 	},
 ]
